@@ -26,12 +26,12 @@ variable "app_name" {
 variable "sql_connection_string" {
   description = "SQL connection string."
   type        = string
+  sensitive   = true
 }
 
 variable "app_dotnet_version" {
   description = "Web Application dotnet version."
   type        = string
-  sensitive   = true
 }
 
 variable "tags" {
