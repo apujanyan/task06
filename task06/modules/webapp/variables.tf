@@ -31,6 +31,7 @@ variable "sql_connection_string" {
 variable "app_dotnet_version" {
   description = "Web Application dotnet version."
   type        = string
+  sensitive   = true
 }
 
 variable "tags" {
