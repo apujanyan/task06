@@ -1,7 +1,7 @@
 locals {
   rg_name         = join("-", [var.resources_name_prefix, "rg"])
-  sql_server_name = join("-", [var.resources_name_prefix, "sqlsrv"])
-  sql_db_name     = join("-", [var.resources_name_prefix, "sqldb"])
+  sql_server_name = join("-", [var.resources_name_prefix, "sql"])
+  sql_db_name     = join("-", [var.resources_name_prefix, "db"])
   asp_name        = join("-", [var.resources_name_prefix, "asp"])
   app_name        = join("-", [var.resources_name_prefix, "app"])
   tags = {
