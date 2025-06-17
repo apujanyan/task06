@@ -1,5 +1,5 @@
 resources_name_prefix     = "cmaz-d4qm9uvw-mod6"
-location                  = "eastus"
+location                  = "centralus"
 kv_rg_name                = "cmaz-d4qm9uvw-mod6-kv-rg"
 kv_name                   = "cmaz-d4qm9uvw-mod6-kv"
 sql_admin_secret_name     = "sql-admin-name"
