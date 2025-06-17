@@ -47,6 +47,7 @@ resource "azurerm_key_vault_secret" "sql_admin_secret" {
   value        = local.sql_admin_username
   key_vault_id = var.kv_id
   depends_on   = [azurerm_mssql_server.sql_server]
+  tags         = var.tags
 }
 
 resource "azurerm_key_vault_secret" "sql_password_secret" {
@@ -54,4 +55,5 @@ resource "azurerm_key_vault_secret" "sql_password_secret" {
   value        = random_password.sql_password.result
   key_vault_id = var.kv_id
   depends_on   = [azurerm_mssql_server.sql_server]
+  tags         = var.tags
 }
