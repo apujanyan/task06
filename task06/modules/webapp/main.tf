@@ -30,4 +30,6 @@ resource "azurerm_linux_web_app" "app" {
   }
 
   tags = var.tags
+
+  depends_on = [azurerm_service_plan.asp]
 }
