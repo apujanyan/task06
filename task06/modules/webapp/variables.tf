@@ -25,8 +25,8 @@ variable "app_name" {
 
 variable "sql_connection_string" {
   description = "SQL connection string."
-  type        = string
   sensitive   = true
+  type        = string
 }
 
 variable "app_dotnet_version" {
